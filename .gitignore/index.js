@@ -8,7 +8,8 @@ bot.on('ready', () => {
     console.log("Bot Ready !");
 });
 
-bot.login(process.env.TOKEN)
+bot.login(process.env.TOKEN);
+
 bot.on('message', message => {
     if (message.content === "test"){
         message.reply("test");
