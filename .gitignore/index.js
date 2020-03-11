@@ -1,14 +1,14 @@
 const Discord = require('discord.js');
 
 var bot = new Discord.Client();
-var prefix = ("/");
+var prefix = (";;");
 
 bot.on('ready', () => {
-    bot.user.setPresence({ game: { name: 'Soon', type: 0} });
+    bot.user.setPresence({ game: { name: 'écrire des factures', type: 0} });
     console.log("Bot Ready !");
 });
 
-bot.login(process.env.TOKEN);
+bot.login('Njg2MzI0MjMzNTU4Njg3NzY4.XmkWKQ.5fiHVg4GoZRJI8RpcD5hHKnhCqg');
 
 bot.on('message', message => {
     if (message.content === "test"){
